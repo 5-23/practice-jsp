@@ -18,7 +18,7 @@
 
     <div class = "gugudan">
     <% for(int i = 1 ; i < 10; i++){
-        out.println("<div class = \"textGugudan\"id = \"" + i +"\">");
+        out.println("<div id = \"" + i +"\">");
         for(int j = 1; j < 10; j++){ 
     %>
 
@@ -52,9 +52,11 @@ div{
 }
 
 .gugudan{
-    text-align : center;
     display: flex;
-    border-radius: 30px rgb(255 , 255 , 255);
+    text-align: center;
+    float: center;
+    border-radius: 30px;
+    margin: 0 auto;
 }
 
 
