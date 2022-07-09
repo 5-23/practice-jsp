@@ -14,20 +14,50 @@
 
 
 <body>
-	<h1>대충 메인 페이지</h1>
+	<h1>대충 제목</h1>
 
-    <% String[] array = {"알파" , "배타" , "김마" , "세타"};for(String i : array){ %>
-       <%-- <h2><% i %></h2> --%>
-       <% out.println("<h2>" + i + "</h2>"); %>
-    <% } %>
+    <div class = "gugudan">
+    <% for(int i = 1 ; i < 10; i++){
+        out.println("<div class = \"textGugudan\"id = \"" + i +"\">");
+        for(int j = 1; j < 10; j++){ 
+    %>
+
+            <%
+            out.println("<h2>" + i + "*" + j + "=" + i*j + "</h2>");
+            %>
+
+    <%
+        }
+        out.println("</div>");
+    }
+    %>
+    </div>
+
 </body>
 
 <style>
 h1{
-    color : red;
+    text-align : center;
+    color : rgb(255 , 255 , 255);
 }
 
-</style>
+*{
+    background-color: rgb(54 , 54 , 54);
+}
 
+
+div{
+    padding-right: 20px;
+    color : rgb(255 , 255 , 255);
+}
+
+.gugudan{
+    text-align : center;
+    display: flex;
+    border-radius: 30px rgb(255 , 255 , 255);
+}
+
+
+</style>
 
 </html>
