@@ -42,6 +42,7 @@ String res = randomHTML();
     left: 13px;
     width: 50px;
     height: 50px;
+    border-radius: 10px;
 }
 
 </style>
