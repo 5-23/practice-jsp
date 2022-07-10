@@ -14,7 +14,7 @@
 <body>
 
 <%!
-
+public int view = 0;
 String randomHTML(){
     int integer = (int)(Math.random()*10+1);
     String color = (int)(Math.random()*225) + "," + (int)(Math.random()*225) + "," + (int)(Math.random()*225);
@@ -23,10 +23,12 @@ String randomHTML(){
 %>
 
 <%
+view++;
 String res = randomHTML();
 %>
 
 <h1><%= res %></h1>
+<b>조회수 : <%= view %></b>
 
 </body>
 
