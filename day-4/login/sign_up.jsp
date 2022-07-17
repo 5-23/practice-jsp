@@ -53,6 +53,34 @@
     transition: all .5s;
 }
 
+.box{
+    transition: all 2s;
+    transform: translateX(3000px);
+}
+
+div:nth-child(2){transition-delay: .1s;}
+div:nth-child(3){transition-delay: .2s;}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+body{
+    background-color:rgb(27, 30, 35);
+}
+
+input{
+    height: 30px;
+    background-color: rgb(51, 102, 255);
+    outline: 0;
+    border: 0;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+input:hover{
+    background-color: rgb(30, 83, 237);
+}
 
 b{
     position: relative;
@@ -61,7 +89,8 @@ b{
     left:19px;
     color:white;
     background-color: rgb(40, 93, 247);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 #rmx{
@@ -75,6 +104,21 @@ b{
 }
 
 </style>
+
+
+
+<script>
+window.onload = ()=>{
+    for (i = 0; i<3;i++){
+        document.getElementsByClassName("box")[i].style.transform = `translateX(10px)`
+    }
+}
+
+function rmx(){
+    location.href = `?name=`+document.getElementById("name").value + `&password=`+document.getElementById("password").value;
+}
+
+</script>
 
 
 
