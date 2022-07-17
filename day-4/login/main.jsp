@@ -66,8 +66,7 @@ b{
     left:19px;
     color:white;
     background-color: rgb(40, 93, 247);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
 }
 
 #rmx{
